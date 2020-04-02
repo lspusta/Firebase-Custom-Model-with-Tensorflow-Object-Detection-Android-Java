@@ -1,0 +1,2 @@
+rootProject.name='MLKitFirebaseObjectDetection'
+include ':app'
