@@ -1,4 +1,4 @@
-# Firebase Custom Modal with Tensflow Object-Detection
+# Firebase Custom Model with Tensflow Object-Detection
 ## Tools Used
 1. Java
 2. Firebase
