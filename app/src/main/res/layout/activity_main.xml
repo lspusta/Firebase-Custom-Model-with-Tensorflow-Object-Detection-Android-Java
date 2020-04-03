@@ -12,19 +12,21 @@
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnTakePicture"/>
-
-    <itkido.me.mlkitfirebaseobjectdetection.GraphicOverlay
-        android:id="@+id/graphic_overlay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/btnTakePicture"/>
+        android:layout_above="@+id/btnScanPicture"/>
 
     <com.wonderkiln.camerakit.CameraView
         android:id="@+id/cameraView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnTakePicture"/>
+        android:layout_above="@+id/btnScanPicture"/>
+
+    <itkido.me.mlkitfirebaseobjectdetection.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnScanPicture"/>
+
+
 
 
 
@@ -32,15 +34,15 @@
         android:id="@+id/recyclerv_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnTakePicture"/>
+        android:layout_above="@+id/btnScanPicture"/>
 
 
     <Button
-        android:id="@+id/btnTakePicture"
+        android:id="@+id/btnScanPicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Take Picture"
+        android:text="Scan Picture"
         />
 
 </RelativeLayout>

@@ -38,6 +38,8 @@ dependencies {
 
     implementation 'com.wonderkiln:camerakit:0.13.1'
     //implementation 'com.camerakit:camerakit:1.0.0-beta3.10'
+//    implementation 'com.camerakit:camerakit:1.0.0-beta3.11'
+//    implementation 'com.camerakit:jpegkit:0.1.0'
 
     implementation 'com.android.support:exifinterface:29.0.0'
     implementation 'com.google.firebase:firebase-ml-vision:19.0.3'

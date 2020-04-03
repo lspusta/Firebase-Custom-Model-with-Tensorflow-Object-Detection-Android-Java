@@ -45,8 +45,10 @@ import com.google.firebase.ml.custom.FirebaseModelOptions;
 import com.google.firebase.ml.custom.FirebaseModelOutputs;
 import com.wonderkiln.camerakit.CameraKitError;
 import com.wonderkiln.camerakit.CameraKitEvent;
+import com.wonderkiln.camerakit.CameraKitEventCallback;
 import com.wonderkiln.camerakit.CameraKitEventListener;
 import com.wonderkiln.camerakit.CameraKitImage;
+import com.wonderkiln.camerakit.CameraKitTextDetect;
 import com.wonderkiln.camerakit.CameraKitVideo;
 import com.wonderkiln.camerakit.CameraView;
 
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     private String stringElements = "";
     private CameraView cameraView;
     private RecyclerView recyclerv_view;
-    private Button btnTakePicture;
+    private Button btnScanPicture;
     private ImageView mImageView;
     private Bitmap mSelectedImage;
     private GraphicOverlay mGraphicOverlay;
@@ -138,10 +140,12 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
         cameraView = findViewById(R.id.cameraView);
-        btnTakePicture = findViewById(R.id.btnTakePicture);
+        btnScanPicture = findViewById(R.id.btnScanPicture);
         mImageView = findViewById(R.id.image_view);
         recyclerv_view = findViewById(R.id.recyclerv_view);
         mGraphicOverlay = findViewById(R.id.graphic_overlay);
+
+
 
 
         cameraView.addCameraKitListener(new CameraKitEventListener() {
@@ -187,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        btnTakePicture.setOnClickListener(new View.OnClickListener() {
+        btnScanPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (hasCamera() == true){
