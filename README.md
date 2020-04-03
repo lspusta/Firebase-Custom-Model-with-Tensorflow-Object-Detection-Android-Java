@@ -1,4 +1,4 @@
-# Firebase Custom Model with Tensorflow Object-Detection
+# Firebase-Custom-Model-with-Tensorflow-Object-Detection-Android-Java
 ## Tools Used
 1. Java
 2. Firebase
